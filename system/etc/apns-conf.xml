@@ -15,28 +15,34 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 */
-    apn carrier="CDMA"
-         mcc="310"
-         mnc="120"
-         apn="0"
-         port=""
-         mmsproxy=""
-         mmsport=""
-         mmsc=""
-         type="*"
-
 -->
 
 <!-- use empty string to specify no proxy or port -->
 <!-- This version must agree with that in apps/common/res/apns.xml -->
 <apns version="6">
-    <apn carrier="CDMA"
-         mcc="310"
-         mnc="120"
-         apn="1"
-         port=""
-         mmsproxy=""
-         mmsport=""
-         mmsc="http://mms.sprintpcs.com"
+    <apn carrier="Verizon"
+        mcc="310"
+        mnc="004"
+        apn=""
+        user="*"
+        server="*"
+        password="*"
+        mmsc="http://mms.vtext.com/servlets/mms"
+    />
+     <apn name="Production" 
+         numeric="310012"  
+         mcc="310" 
+         mnc="012"  
+         apn="1" 
+         user="null"  
+         server="null" 
+         password="null" 
+         proxy="null" 
+         port="" 
+         mmsproxy="" 
+         mmsport="" 
+         mmsprotocol="2.0" 
+         mmsc="http://mms.vtext.com/servlets/mms"  
+         type="mms" 
     />
 </apns>
