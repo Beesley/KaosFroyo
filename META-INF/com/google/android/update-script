@@ -234,6 +234,12 @@ set_perm 0 0 0755 SYSTEM:etc/bluetooth
 set_perm 1000 1000 0640 SYSTEM:etc/bluetooth/auto_pairing.conf
 set_perm 3002 3002 0444 SYSTEM:etc/bluetooth/blacklist.conf
 set_perm 0 2000 0550 SYSTEM:etc/init.goldfish.sh
+set_perm 0 0 04755 SYSTEM:bin/bash
+symlink /system/bin/bash SYSTEM:bin/sh
+set_perm 0 0 04755 SYSTEM:bin/nano
+set_perm 0 0 04755 SYSTEM:bin/sysrw
+set_perm 0 0 04755 SYSTEM:bin/sysro
+
 set_perm 1002 1002 0440 SYSTEM:etc/dbus.conf
 set_perm 1014 2000 0550 SYSTEM:etc/dhcpcd/dhcpcd-run-hooks
 set_perm 1001 1005 0440 SYSTEM:etc/AudioPara4.csv
