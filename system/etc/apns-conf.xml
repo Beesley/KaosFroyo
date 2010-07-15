@@ -29,7 +29,7 @@
         password="*"
         mmsc="http://mms.vtext.com/servlets/mms"
     />
-     <apn name="Production" 
+     <apn carrier="Production" 
          numeric="310012"  
          mcc="310" 
          mnc="012"  
